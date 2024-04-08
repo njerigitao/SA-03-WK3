@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const baseURL = 'http://localhost:3000/';
     const filmList = document.getElementById('films');
     const movieDetails = document.getElementById('movie-details');
-})
+
 // Function to fetch all films and populate the films menu
 const fetchFilms = () => {
     fetch(`${baseURL}/films`)
@@ -114,4 +114,4 @@ const displayMovieDetails = (film)=> {
 
     // Initial setup
     fetchFilms();
-;
+});
